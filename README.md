@@ -1,1 +1,1 @@
-# Html-css
+This project is a basic web page created using HTML and CSS. It showcases the structure and styling of a website, including elements like headings, paragraphs, images, navigation menus, buttons, and layouts.
