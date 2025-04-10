@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Form with Validation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Login/Signup</h2>
+    <form>
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required minlength="3" maxlength="15">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required minlength="6">
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>

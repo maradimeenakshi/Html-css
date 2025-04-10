@@ -1,0 +1,77 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* To contain rounded corners of the image */
+    margin: 20px; /* Add some spacing around the card */
+    width: 300px; /* Default width for smaller screens */
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Optional: Limit image height */
+    object-fit: cover; /* Ensure image covers the area without distortion */
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.card-content p {
+    margin-bottom: 15px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Media query for larger screens (desktop) */
+@media (min-width: 768px) {
+    .card {
+        width: 400px; /* Wider card on desktop */
+    }
+
+    .card-content h3 {
+        font-size: 1.8em;
+    }
+
+    .card-content p {
+        font-size: 1em;
+    }
+
+    .button {
+        font-size: 1em;
+    }
+}
